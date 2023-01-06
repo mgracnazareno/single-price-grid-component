@@ -112,6 +112,7 @@ ul {
   color: #FFFFFF;
   max-width: 100%;
   padding: 1.5rem;
+  margin-top: 0;
 }
 
 .menu-list {
@@ -131,17 +132,16 @@ ul {
 @media screen and (max-width: 375px){
   
   .main p {
-    max-width: 95%;
+    max-width: 90%;
   }
 }
 
 @media screen and (min-width: 900px){
   body {
-    max-width: 59%;
+    max-width: 60%;
     margin: 0 auto;
   }
   .wrapper {
-    display: grid;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -150,15 +150,18 @@ ul {
     background-color: #FFFFFF;
   }
   .main {
-   grid-row-start: 1;
+    grid-row: 1;
+    grid-column: 1 / 4;
+   /* grid-row-start: 1;
    grid-row-end: 3;
    grid-column-start: 1;
-   grid-column-end: 3;
-   padding: 2rem;
+   grid-column-end: 3; */
   } 
 
   .main p {
-    max-width: 100%;
+    max-width: 65%;
+    font-size: 1rem;
+    margin-bottom: 0;
   }
 }
 
