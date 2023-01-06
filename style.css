@@ -14,6 +14,7 @@ body {
   font-size: 1rem;
   font-family: 'Karla', sans-serif;
   background-color: var(--light-gray);
+  max-width: 100%;
 }
 
 h1 {
@@ -58,6 +59,7 @@ ul {
 .main {
  padding: 1.5rem;
  background-color: #FFFFFF;
+ margin: 2rem 0;
 }
 
 .main p {
@@ -124,7 +126,7 @@ ul {
 }
 
 .menu-list li {
-  line-height: 25px;
+  line-height: 23px;
   font-weight: light;
   font-size: 0.875rem;
 }
@@ -138,30 +140,26 @@ ul {
 
 @media screen and (min-width: 900px){
   body {
-    max-width: 60%;
+    max-width: 50%;
     margin: 0 auto;
   }
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 5rem auto;
+    margin: 3rem auto;
     max-width: 60%;
     background-color: #FFFFFF;
   }
   .main {
     grid-row: 1;
     grid-column: 1 / 4;
-   /* grid-row-start: 1;
-   grid-row-end: 3;
-   grid-column-start: 1;
-   grid-column-end: 3; */
+    gap: 10px;
   } 
 
   .main p {
-    max-width: 65%;
+    /* max-width: 65%; */
     font-size: 1rem;
-    margin-bottom: 0;
   }
 }
 
