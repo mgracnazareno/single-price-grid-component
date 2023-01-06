@@ -57,6 +57,7 @@ ul {
 }
 .main {
  padding: 1.5rem;
+ background-color: #FFFFFF;
 }
 
 .main p {
@@ -128,6 +129,7 @@ ul {
 }
 
 @media screen and (max-width: 375px){
+  
   .main p {
     max-width: 95%;
   }
